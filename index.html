@@ -1,36 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>portfolio</title>
-       <link rel="stylesheet" type="text/css" href="index.css">
-       <link rel="shortcut icon" type="image/x-icon" href="images/logos.png">
-    </head>
-        <body>
-        <div class="header">
-        <div class="mid">
-                <header>
-                    <img class="comp" src="images/web.png" alt="computer">
-                    <div class="topmenu">
-                        <aside>
-                            <a href="#">Home</a>
-                             <a href="#">About me</a>
-                              <a href="#">Skills</a>
-                               <a href="#">Contacts</a>
-                        </aside>
+
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logos.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="header">
+            <div class="container clearfix">
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="home">
+            <div class="container">
+                <h3>Welcome to my page</h3>
+                <h1>This is my first project</h1>
+            </div>
+        </div>
+
+        <div id="skills" class="box">
+            <div class="container">
+                <h2 class="title">Skills</h2>
+                <p class="descr">My new skills</p>
+                <div class="skills-wrap clearfix">
+                    <div class="skills-item logo1">
+                        <h5 class="title">HTML5</h5>
                     </div>
-                </header>
+                    <div class="skills-item logo2">
+                        <h5 class="title">CSS3</h5>
+                    </div>
+
+                    <div class="skills-item logo3">
+                        <h5 class="title">JAVASCRIPT</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" name="about" class="box">
+                <div class="container">
+                    <h2 class="title">About me</h2>
+                    <div class="about-wrap">
+                        <div class="about-item clearfix">
+                            <div class="about-text left text-right">
+                                <p>Hello, my name is<br> Anastasia Doroshenko</p>
+                            </div>
+                            <div class="about-img left">
+                                <img src="images/me.JPG" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-wrap">
+                        <div class="about-item clearfix">
+                            <div class="about-text right text-left">
+                                <p>I live and work in Dnipro.</p>
+                            </div>
+                            <div class="about-img right">
+                                <img src="images/dnipro.jpg" alt="city">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-wrap">
+                        <div class="about-item clearfix">
+                            <div class="about-text left text-right">
+                                <p>But now I came to Lviv</p>
+                            </div>
+                            <div class="about-img left">
+                                <img src="images/lviv.jpg" alt="town">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-wrap">
+                        <div class="about-item clearfix">
+                            <div class="about-text right text-left">
+                                <p>I get new skills in web-development.</p>
+                            </div>
+                            <div class="about-img right">
+                                <img src="images/ss.png" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div id="contact" name="contact" class="box">
+            <div class="container">
+                <h2 class="title">Contact</h2>
+                <form action="#" id="message">
+                    <div class="clearfix">
+                        <div class="left">
+                            <input type="text" placeholder="First name*" />
+                            <input type="text" placeholder="Second name*" />
+                            <input type="text" placeholder="E-mail*" />
+                        </div>
+                        <div class="right">
+                            <input type="textarea" cols="0" rows="0" placeholder="Your message*"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="menu">
-        <div class="mid"></div>
-        </div>
-        <div class="content">
-        <div class="mid"></div>
-        </div>
-        <div class="footer">
-        <div class="mid"></div>
-        </div>
-      
-    </body>
+
+    </div>
+</body>
+
 </html>

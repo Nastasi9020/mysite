@@ -1,26 +1,252 @@
+html {
+    height: 100%;
+}
+
 body {
-    background: #efefef url(images/fon.png);
-    margin: 0 auto; 
+    height: 100;
+    font: 14px/18px 'Times New Roman', Times, sans-serif;
+    background-color: #FFF;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+* {
+    margin: 0;
     padding: 0;
+    outline: none;
+    -webkid-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.mid {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-    
-}
-.header {
-    height: 300px; 
-    background: #18ecdb;
-    
+a,
+a:hover {
+    text-decoration: none;
 }
 
-.topmenu {
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.left {
     float: left;
 }
 
+.right {
+    float: right;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+#header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.nav {
+    float: right;
+    padding-top: 5px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 40px;
+}
+
+.nav li:last-child: {
+    margin-right: 0;
+}
+
+.nav a {
+    text-transform: uppercase;
+    font: 14px Arial, sans-serif;
+    color: #fff;
+}
+
+.nav a:hover {
+    color: #7FFF00;
+}
+
+#home {
+    height: 700px;
+    padding-top: 270px;
+    text-align: center;
+    color: #fff;
+    background: #222 url(../images/web12.jpg) no-repeat center bottom;
+    -webkid-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#home h3 {
+    margin-bottom: 40px;
+    font: 40px/40px Arial, sans-serif;
+}
+
+#home h1 {
+    text-transform: uppercase;
+    font: 75px/75px Arial, sans-serif;
+    color: #778899;
+    text-shadow: 1px 1px 3px black;
+}
+
+.box {
+    padding: 120px 0;
+}
+
+#skills {
+    text-align: center;
+}
+
+h2.title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font: bold 40px/40px Arial, sans-serif;
+    color: #222;
+}
+
+h5.title {
+    margin-bottom: 10px;
+    font: bold 18px/18px Arial, sans-serif;
+    color: #222;
+}
+
+.descr {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #777;
+}
+
+.skills-wrap {
+    padding-top: 70px;
+}
+
+.skills-item {
+    float: left;
+    width: 33.33%;
+    padding: 90px 10px 0;
+}
+
+.logo1 {
+    background: url(../images/html5.png) no-repeat center top;
+}
+
+.logo2 {
+    background: url(../images/css3.png) no-repeat center top;
+}
+
+.logo3 {
+    background: url(../images/javascript.png) no-repeat center top;
+}
+
+#about {
+    text-align: center;
+    background: #FAFAFA;
+}
+
+.about-text {
+    width: 35%;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: cursive, sans-serif;
+    color: #FA8072;
+}
+
+.about-img {
+    width: 30%;
+}
+
+.about-img:after {
+    content: " ";
+    display: block;
+    height: 94px;
+    width: 3px;
+    margin: 0 auto;
+    background: #FFA07A;
+}
+
+.about-img:last-child:after {}
+
+.about-img img {
+    display: inline-block;
+    width: 177px;
+    height: 177px;
+    border: 4px solid #FFA07A;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -border-radius: 50%;
+}
+
+#contact {
+    text-align: center;
+    background: #696969 url(../images/map.png) no-repeat right bottom;
+}
+
+#contact h2.title {
+    color: #fff;
+}
+
+#message left,
+#message right {
+    width: 40%;
+}
+
+#message input[type="text"],
+#message input[type=textarea] {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    font: bold 14px/14px Arial, sans-serif;
+    margin-right: 0;
+    background: #fff;
+    box-shadow: none;
+    
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+         -o-border-radius: 4px;
+            border-radius: 4px;
+}
 
 
+#message input[type="text"] {
+    height: 50px;
+    border: 1px solid #ccc;
+}
 
+#message input[type=textarea] {
+    height: 210px;
+    border: none;
+    
+}
 
+::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font: bold 14px/14px Arial, sans-serif;
+    color: #bbb;
+}
+
+::-moz-placeholder {
+    text-transform: uppercase;
+    font: bold 14px/14px Arial, sans-serif;
+    color: #bbb;
+}
