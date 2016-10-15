@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initiak-scale=1.0">
     <title>portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/logos.png">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-responsive.css">
 </head>
 
 <body>
@@ -14,10 +18,10 @@
         <div id="header">
             <div class="container clearfix">
                 <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -46,8 +50,9 @@
                     </div>
                 </div>
             </div>
+            </div>
 
-            <div id="about" name="about" class="box">
+            <div id="about" class="box">
                 <div class="container">
                     <h2 class="title">About me</h2>
                     <div class="about-wrap">
@@ -86,7 +91,7 @@
                     <div class="about-wrap">
                         <div class="about-item clearfix">
                             <div class="about-text right text-left">
-                                <p>I get new skills in web-development.</p>
+                                <p>get new skills in web-development.</p>
                             </div>
                             <div class="about-img right">
                                 <img src="images/ss.png" alt="logo">
@@ -95,26 +100,40 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="contact" name="contact" class="box">
+        
+         <div id="contact" class="box">
             <div class="container">
                 <h2 class="title">Contact</h2>
-                <form action="#" id="message">
+                <form action="https://formspree.io/businka90@bk.ru"method="Post" id="message">
                     <div class="clearfix">
                         <div class="left">
-                            <input type="text" placeholder="First name*" />
-                            <input type="text" placeholder="Second name*" />
-                            <input type="text" placeholder="E-mail*" />
+                            <input type="text" placeholder="First name*" id="first name" required/>
+                            <input type="text" placeholder="Second name*" id="second name" required/>
+                            <input type="text" placeholder="E-mail*" id="email" required/>
                         </div>
                         <div class="right">
-                            <input type="textarea" cols="0" rows="0" placeholder="Your message*"/>
+                            <textarea cols="0" rows="0" placeholder="Your message*" ></textarea>
                         </div>
                     </div>
+                    <input type="submit" value="Send message" class="btn"/>
                 </form>
             </div>
         </div>
-
-    </div>
+        <div id="copyright">
+            <div class="container clearfix">
+                <p class="left">&#169;SoftServe 2016</p>
+                <p class="right">Tel: +380505661975</p>
+                <div class="social">
+                    <a href="#" class="ic-vk">&nbsp;</a>
+                    <a href="#" class="ic-fb">&nbsp;</a>
+                     <a href="#" class="ic-insta">&nbsp;</a>
+                </div>
+     </div>
+        </div>
+        </div>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
