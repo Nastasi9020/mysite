@@ -86,7 +86,7 @@ a:hover {
     padding-top: 270px;
     text-align: center;
     color: #fff;
-    background: #222 url(images/web12.jpg) no-repeat center bottom;
+    background: #222 url(../images/web12.jpg) no-repeat center bottom;
     -webkid-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -146,15 +146,15 @@ h5.title {
 }
 
 .logo1 {
-    background: url(images/html5.png) no-repeat center top;
+    background: url(../images/html5.png) no-repeat center top;
 }
 
 .logo2 {
-    background: url(images/css3.png) no-repeat center top;
+    background: url(../images/css3.png) no-repeat center top;
 }
 
 .logo3 {
-    background: url(images/javascript.png) no-repeat center top;
+    background: url(../images/javascript.png) no-repeat center top;
 }
 
 .about-wrap {
@@ -292,15 +292,15 @@ h5.title {
 }
 
 .ic-vk {
-    background: url(images/vk.png) no-repeat;
+    background: url(../images/vk.png) no-repeat;
 }
 
 .ic-fb {
-    background: url(images/fb.png) no-repeat;
+    background: url(../images/fb.png) no-repeat;
 }
 
 .ic-insta {
-    background: url(images/insta.png) no-repeat;
+    background: url(../images/insta.png) no-repeat;
 }
 
 #copyright .social {
